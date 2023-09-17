@@ -1,0 +1,126 @@
+/* .top-banner {
+  background-color:#1A1A1A;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 90px;
+}
+
+.top-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+.free-delivery {
+  color: #626262;
+  align-items:center;
+  display: flex;
+}
+.vertical-border {
+  border-right: 1px solid #ffffff;
+  height: 24px;
+  margin: 0 20px;
+}
+.return-policy {
+  color: #626262;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  margin-right: 20px;
+  color: #626262;
+}
+
+.follow-us {
+  margin-right: 10px;
+  color: #626262;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  color: #626262;
+} */
+
+.top-banner {
+  background-color: #1A1A1A;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px; /* Reduce padding for smaller screens */
+}
+
+.top-banner-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.free-delivery {
+  color: #626262;
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px; /* Add spacing between elements on smaller screens */
+}
+
+.vertical-border {
+  border-right: 1px solid #ffffff;
+  height: 24px;
+  margin: 0 10px; /* Reduce margin for smaller screens */
+}
+
+.return-policy {
+  color: #626262;
+  margin-bottom: 10px; /* Add spacing between elements on smaller screens */
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  margin-right: 10px; /* Reduce margin for smaller screens */
+  color: #626262;
+}
+
+.follow-us {
+  margin-right: 5px; /* Reduce margin for smaller screens */
+  color: #626262;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px; /* Reduce margin for smaller screens */
+  color: #626262;
+}
+
+@media (max-width: 414px) { /* Apply styles for screens up to iPhone 14 width */
+  .top-banner {
+    padding: 10px 5px; /* Further reduce padding for smaller screens */
+  }
+
+  .top-banner-content {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    align-items: center;
+    text-align: center;
+  }
+}

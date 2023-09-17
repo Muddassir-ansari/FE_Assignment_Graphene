@@ -1,0 +1,140 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black; 
+  padding: 0 90px;
+  height: 60px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.shophar {
+  font-size: 40px;
+  font-weight: 275;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+}
+
+.wishlist,
+.bag {
+  margin-left: 20px;
+  font-size: 14px;
+  font-family: "Archivo Black", sans-serif;
+  color: #fff;
+}
+/* Navigation Section */
+.navbar {
+  display: flex;
+  border-top: 1px solid #fff;
+  background-color: black;
+  padding: 0 90px;
+  gap: 80px;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.star {
+  position: absolute;
+  top: -11px;
+  left: 0;
+  color: #fff; 
+}
+/* dropdown */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.dropdown-item {
+  padding: 10px;
+  text-align: left;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Archivo Black",sans-serif;
+}
+.dropdown-item:hover {
+  background-color: #555; 
+}
+
+
+
+
+/*  */
+@media (max-width: 414px) {
+  .right-content {
+    display: flex;
+    align-items: center;
+    position: relative; /* Make sure the toggle button stays in the same line */
+  }
+
+  .toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+
+  .bar.open:nth-child(1) {
+    transform: translateY(7px) rotate(-45deg);
+  }
+
+  .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar.open:nth-child(3) {
+    transform: translateY(-7px) rotate(45deg);
+  }
+
+  .navbar {
+    display: none; /* Hide the navbar by default on smaller screens */
+  }
+
+  .navbar.open {
+    display: flex; /* Display the navbar when the menu is open */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust this value as needed */
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+  }
+}

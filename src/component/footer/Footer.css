@@ -1,0 +1,102 @@
+/* Footer.css */
+.footer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("/src/assets/18591063.svg");
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 90px 30px 90px;
+  color: #fff;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff80;
+  line-height: 0;
+}
+
+.left-content h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ffffff80;
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+  width: 558px;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: #ffffff80;
+}
+
+.error {
+  border-color: #ff0000;
+}
+
+.error-text {
+  color: #ff0000;
+  margin-top: 5px;
+}
+
+.submit-button {
+  background-image: url("/src/assets/18591063.svg");
+  border: 2px solid #f07e15;
+  border-radius: 50%;
+  color: #f07e15;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  width: 150px;
+  height: 150px;
+  line-height: 50px;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #ff8800;
+  border-color: #ff8800;
+}
+.h1-title {
+  padding: 0 90px;
+  font-size: 136px;
+  color: white;
+  font-weight: 800;
+  font-family: "Syne", sans-serif;
+  margin-top: -180px;
+  line-height: 0.8;
+  padding-bottom: 40px;
+}
+/* Bottom Footer */
+.bottom-footer{
+  background-color: black;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Poppins",sans-serif;
+  color: white;
+  padding: 15px 0;
+}
