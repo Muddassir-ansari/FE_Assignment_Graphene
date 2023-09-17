@@ -1,61 +1,7 @@
-/* .top-banner {
-  background-color:#1A1A1A;
-  font-family: "Poppins", sans-serif;
-  padding: 10px 90px;
-}
-
-.top-banner-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.left-section {
-  display: flex;
-  align-items: center;
-}
-.free-delivery {
-  color: #626262;
-  align-items:center;
-  display: flex;
-}
-.vertical-border {
-  border-right: 1px solid #ffffff;
-  height: 24px;
-  margin: 0 20px;
-}
-.return-policy {
-  color: #626262;
-}
-
-.right-section {
-  display: flex;
-  align-items: center;
-}
-
-.login {
-  margin-right: 20px;
-  color: #626262;
-}
-
-.follow-us {
-  margin-right: 10px;
-  color: #626262;
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  color: #626262;
-} */
-
 .top-banner {
   background-color: #1A1A1A;
   font-family: "Poppins", sans-serif;
-  padding: 10px 20px; /* Reduce padding for smaller screens */
+  padding: 10px 90px; /* Reduce padding for smaller screens */
 }
 
 .top-banner-content {
