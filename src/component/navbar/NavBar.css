@@ -1,140 +1,156 @@
+/* Styling for the header section */
 .section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black; 
-  padding: 0 90px;
-  height: 60px;
-  font-family: "Work Sans", sans-serif;
+  display: flex; /* Display content as a flex container */
+  justify-content: space-between; /* Space elements evenly horizontally */
+  align-items: center; /* Vertically center content */
+  background-color: black; /* Background color */
+  padding: 0 90px; /* Padding for the header */
+  height: 60px; /* Height of the header */
+  font-family: "Work Sans", sans-serif; /* Font family for text */
 }
 
+/* Styling for the left content within the header */
 .left-content {
-  display: flex;
-  align-items: center;
+  display: flex; /* Display content as a flex container */
+  align-items: center; /* Vertically center content */
 }
 
+/* Styling for the "Shopkart" heading */
 .shophar {
-  font-size: 40px;
-  font-weight: 275;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-size: 40px; /* Font size */
+  font-weight: 275; /* Font weight */
+  color: #fff; /* Text color */
+  font-family: "Poppins", sans-serif; /* Font family */
 }
 
+/* Styling for the right content within the header */
 .right-content {
-  display: flex;
-  align-items: center;
+  display: flex; /* Display content as a flex container */
+  align-items: center; /* Vertically center content */
 }
 
+/* Styling for the "WISHLIST" and "BAG" text */
 .wishlist,
 .bag {
-  margin-left: 20px;
-  font-size: 14px;
-  font-family: "Archivo Black", sans-serif;
-  color: #fff;
+  margin-left: 20px; /* Left margin for spacing */
+  font-size: 14px; /* Font size */
+  font-family: "Archivo Black", sans-serif; /* Font family for text */
+  color: #fff; /* Text color */
 }
-/* Navigation Section */
+
+/* Styling for the navigation section */
 .navbar {
-  display: flex;
-  border-top: 1px solid #fff;
-  background-color: black;
-  padding: 0 90px;
-  gap: 80px;
+  display: flex; /* Display content as a flex container */
+  border-top: 1px solid #fff; /* Top border with white color */
+  background-color: black; /* Background color */
+  padding: 0 90px; /* Padding for the navigation */
+  gap: 80px; /* Gap between navigation items */
 }
 
+/* Styling for individual navigation items */
 .nav-item {
-  padding: 10px 20px;
-  cursor: pointer;
-  position: relative;
-  color: #fff;
-  font-family: "Archivo Black", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  padding: 10px 20px; /* Padding for each navigation item */
+  cursor: pointer; /* Use pointer cursor on hover */
+  position: relative; /* Define a relative position for dropdown */
+  color: #fff; /* Text color */
+  font-family: "Archivo Black", sans-serif; /* Font family for text */
+  font-size: 18px; /* Font size */
+  font-weight: 400; /* Font weight */
 }
 
+/* Styling for the star icon in navigation */
 .star {
-  position: absolute;
-  top: -11px;
-  left: 0;
-  color: #fff; 
+  position: absolute; /* Absolute position for star icon */
+  top: -11px; /* Position relative to the top */
+  left: 0; /* Position relative to the left */
+  color: #fff; /* Star icon color */
 }
-/* dropdown */
+
+/* Styling for the dropdown menu */
 .dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: black;
-  border: 1px solid #fff;
-  display: flex;
-  flex-direction: column;
-  min-width: 150px;
+  position: absolute; /* Absolute position for dropdown */
+  top: 100%; /* Position below the parent item */
+  left: 0; /* Position relative to the left */
+  background-color: black; /* Background color */
+  border: 1px solid #fff; /* Border with white color */
+  display: flex; /* Display content as a flex container */
+  flex-direction: column; /* Stack dropdown items vertically */
+  min-width: 150px; /* Minimum width of the dropdown */
 }
 
+/* Styling for individual dropdown items */
 .dropdown-item {
-  padding: 10px;
-  text-align: left;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 14px;
-  font-weight: 300;
-  font-family: "Archivo Black",sans-serif;
+  padding: 10px; /* Padding for each dropdown item */
+  text-align: left; /* Left-align text */
+  color: #fff; /* Text color */
+  cursor: pointer; /* Use pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+  font-size: 14px; /* Font size */
+  font-weight: 300; /* Font weight */
+  font-family: "Archivo Black", sans-serif; /* Font family for text */
 }
+
+/* Styling for dropdown items on hover */
 .dropdown-item:hover {
-  background-color: #555; 
+  background-color: #555; /* Background color on hover */
 }
 
-
-
-
-/*  */
+/* Media query for screens up to iPhone 14 width */
 @media (max-width: 414px) {
+  /* Apply styles for smaller screens */
+
   .right-content {
-    display: flex;
-    align-items: center;
+    display: flex; /* Display content as a flex container */
+    align-items: center; /* Vertically center content */
     position: relative; /* Make sure the toggle button stays in the same line */
   }
 
+  /* Styling for the toggle button */
   .toggle-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    margin-left: 10px;
+    display: flex; /* Display content as a flex container */
+    flex-direction: column; /* Stack button elements vertically */
+    justify-content: space-between; /* Space elements evenly vertically */
+    width: 30px; /* Button width */
+    height: 20px; /* Button height */
+    cursor: pointer; /* Use pointer cursor on hover */
+    margin-left: 10px; /* Left margin for spacing */
   }
 
+  /* Styling for the bars in the toggle button */
   .bar {
-    width: 100%;
-    height: 4px;
-    background-color: #fff;
-    transition: transform 0.3s ease;
+    width: 100%; /* Width of each bar */
+    height: 4px; /* Height of each bar */
+    background-color: #fff; /* Bar color */
+    transition: transform 0.3s ease; /* Smooth transform transition */
   }
 
+  /* Styling for the bars in the open state of the toggle button */
   .bar.open:nth-child(1) {
-    transform: translateY(7px) rotate(-45deg);
+    transform: translateY(7px) rotate(-45deg); /* Rotate and position the first bar */
   }
 
   .bar.open:nth-child(2) {
-    opacity: 0;
+    opacity: 0; /* Hide the second bar in the open state */
   }
 
   .bar.open:nth-child(3) {
-    transform: translateY(-7px) rotate(45deg);
+    transform: translateY(-7px) rotate(45deg); /* Rotate and position the third bar */
   }
 
+  /* Styling for the navigation menu on smaller screens */
   .navbar {
     display: none; /* Hide the navbar by default on smaller screens */
   }
 
+  /* Styling for the open state of the navigation menu */
   .navbar.open {
     display: flex; /* Display the navbar when the menu is open */
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* Adjust this value as needed */
-    left: 0;
-    width: 100%;
-    background-color: black;
-    z-index: 1;
+    flex-direction: column; /* Stack navigation items vertically */
+    position: absolute; /* Absolute position for the menu */
+    top: 60px; /* Adjust this value as needed to position the menu below the header */
+    left: 0; /* Position relative to the left */
+    width: 100%; /* Full width of the menu */
+    background-color: black; /* Background color of the menu */
+    z-index: 1; /* Ensure the menu is above other content */
   }
 }

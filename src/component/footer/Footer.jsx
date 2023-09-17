@@ -1,8 +1,11 @@
+// Import React, useState, and the CSS file for the Footer component
 import React, { useState } from "react";
 import "../footer/Footer.css";
 import BottomFooter from "./BottomFooter";
 
+// Define the Footer functional component
 function Footer() {
+  // Define state variables for form data, errors, and form submission status
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -12,14 +15,17 @@ function Footer() {
   const [errors, setErrors] = useState({});
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
+  // Handle input field changes and update form data
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Validate the form fields
+
+    // Validate the form fields and set errors if any
     const newErrors = {};
     if (!formData.name) {
       newErrors.name = "Name is required";
@@ -42,6 +48,7 @@ function Footer() {
     }
   };
 
+  // Render the Footer component
   return (
     <div className="footer">
       <div className="footer-content">
@@ -96,12 +103,14 @@ function Footer() {
         </div>
       </div>
       <div className="h1-title">
-        <span>GET</span><br></br>
+        <span>GET</span>
+        <br></br>
         <span>IN TOUCH</span>
       </div>
-      <BottomFooter/>
+      <BottomFooter />
     </div>
   );
 }
 
+// Export the Footer component as the default export
 export default Footer;

@@ -1,72 +1,85 @@
+/* Styling for the top banner section */
 .top-banner {
-  background-color: #1A1A1A;
-  font-family: "Poppins", sans-serif;
-  padding: 10px 90px; /* Reduce padding for smaller screens */
+  background-color: #1a1a1a; /* Background color */
+  font-family: "Poppins", sans-serif; /* Font family for text */
+  padding: 10px 90px; /* Padding for the top banner (reduce for smaller screens) */
 }
 
+/* Styling for the content within the top banner */
 .top-banner-content {
-  display: flex;
+  display: flex; /* Display content as a flex container */
   flex-wrap: wrap; /* Allow content to wrap on smaller screens */
-  align-items: center;
-  justify-content: space-between;
-  font-size: 12px;
-  font-weight: 400;
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Distribute content evenly */
+  font-size: 12px; /* Font size */
+  font-weight: 400; /* Font weight */
 }
 
+/* Styling for the left section of the top banner */
 .left-section {
-  display: flex;
-  align-items: center;
+  display: flex; /* Display content as a flex container */
+  align-items: center; /* Vertically center content */
   flex-wrap: wrap; /* Allow content to wrap on smaller screens */
 }
 
+/* Styling for the "Free Delivery" text and vertical border */
 .free-delivery {
-  color: #626262;
-  align-items: center;
-  display: flex;
-  margin-bottom: 10px; /* Add spacing between elements on smaller screens */
+  color: #626262; /* Text color */
+  align-items: center; /* Vertically center content */
+  display: flex; /* Display content as a flex container */
+  margin-bottom: 10px; /* Add spacing between elements (for smaller screens) */
 }
 
+/* Styling for the vertical border between sections */
 .vertical-border {
-  border-right: 1px solid #ffffff;
-  height: 24px;
-  margin: 0 10px; /* Reduce margin for smaller screens */
+  border-right: 1px solid #ffffff; /* Vertical border */
+  height: 24px; /* Height of the border */
+  margin: 0 10px; /* Margin around the border (reduce for smaller screens) */
 }
 
+/* Styling for the "Return Policy" text */
 .return-policy {
-  color: #626262;
-  margin-bottom: 10px; /* Add spacing between elements on smaller screens */
+  color: #626262; /* Text color */
+  margin-bottom: 10px; /* Add spacing between elements (for smaller screens) */
 }
 
+/* Styling for the right section of the top banner */
 .right-section {
-  display: flex;
-  align-items: center;
+  display: flex; /* Display content as a flex container */
+  align-items: center; /* Vertically center content */
 }
 
+/* Styling for the "Login" text */
 .login {
-  margin-right: 10px; /* Reduce margin for smaller screens */
-  color: #626262;
+  margin-right: 10px; /* Margin to the right (reduce for smaller screens) */
+  color: #626262; /* Text color */
 }
 
+/* Styling for the "Follow Us" text */
 .follow-us {
-  margin-right: 5px; /* Reduce margin for smaller screens */
-  color: #626262;
+  margin-right: 5px; /* Margin to the right (reduce for smaller screens) */
+  color: #626262; /* Text color */
 }
 
+/* Styling for social icons */
 .social-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px; /* Reduce margin for smaller screens */
-  color: #626262;
+  width: 20px; /* Width of social icons */
+  height: 20px; /* Height of social icons */
+  margin-right: 5px; /* Margin to the right (reduce for smaller screens) */
+  color: #626262; /* Icon color */
 }
 
-@media (max-width: 414px) { /* Apply styles for screens up to iPhone 14 width */
+/* Media query for screens up to iPhone 14 width */
+@media (max-width: 414px) {
+  /* Apply styles for smaller screens */
+
   .top-banner {
     padding: 10px 5px; /* Further reduce padding for smaller screens */
   }
 
   .top-banner-content {
     flex-direction: column; /* Stack content vertically on smaller screens */
-    align-items: center;
-    text-align: center;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text horizontally */
   }
 }
